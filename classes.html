@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Classes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Our Classes</h2>
+  <div class="class-container">
+    <div onclick="enroll('Strength Training')">
+      <img src="strength.jpg"><p>Strength Training</p>
+    </div>
+    <div onclick="enroll('Yoga')">
+      <img src="yoga.jpg"><p>Yoga</p>
+    </div>
+    <div onclick="enroll('Cardio')">
+      <img src="cardio.jpg"><p>Cardio</p>
+    </div>
+    <div onclick="enroll('Kickboxing')">
+      <img src="kickboxing.jpg"><p>Kickboxing</p>
+    </div>
+    <div onclick="enroll('Swimming')">
+      <img src="swimming.jpg"><p>Swimming</p>
+    </div>
+  </div>
+  
+  <script>
+    function enroll(className) {
+      localStorage.setItem("selectedClass", className);
+      window.location.href = "booking.html";
+    }
+  </script>
+  
+</body>
+</html>

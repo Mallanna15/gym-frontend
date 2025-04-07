@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Admin Login</h2>
+  <form id="adminLogin">
+    <input type="text" id="username" placeholder="Username" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+  </form>
+  <p id="adminMsg"></p>
+
+  <script>
+    document.getElementById("adminLogin").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+      if (user === "admin" && pass === "1234") {
+        alert("Welcome Admin!");
+        // You can redirect to admin dashboard here
+      } else {
+        document.getElementById("adminMsg").textContent = "Invalid credentials!";
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f8f9fa;
+    color: white;
+  }
+  
+  header {
+    background: transparent;
+    color: rgb(255, 255, 255);
+    padding: 1em;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-decoration: #03b9f6;
+  }
+  
+  nav li {
+    margin: 0 1em;
+  }
+  
+  nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 2em;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+  }
+  
+  form input, form select, form button {
+    margin-bottom: 1em;
+    padding: 0.5em;
+  }
+  
+  button {
+    background: #27ae60;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #219150;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1em;
+    background: #2c3e50;
+    color: white;
+  }
+  .class-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1em;
+  }
+  .class-container div {
+    text-align: center;
+    margin: 1em;
+  }
+  .class-container img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  form {
+    max-width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  form input, form select, form button {
+    margin-bottom: 1em;
+    padding: 0.5em;
+  }
+  body {
+    background-image: url('1.jpg'); /* replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
